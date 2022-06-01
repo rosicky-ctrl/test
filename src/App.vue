@@ -18,6 +18,14 @@
 
 <style>
 
+    table.products {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    table.products td, table.products th {
+        padding: 1rem;
+        border: 2px solid black;
+    }
     nav a+a {
         margin-left: 1rem;
     }
