@@ -7,6 +7,11 @@
 
 <script setup>
 
+    import { ref } from 'vue'
+    let products = ref(null)
+    fetch('https://api.nbp.pl/api/exchangerates/tables/a/?format=json')
+    .then (response => response.json())
+    .then (data => products.value = data)
     import HelloWorld from './components/HelloWorld.vue'
 
 </script>
